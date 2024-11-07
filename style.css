@@ -117,6 +117,24 @@ body {
     background-color: #77b7d8;
 }
 
+.locationButton {
+    display: block;
+    width: 90%;
+    margin: 20px auto;
+    padding: 12px;
+    background-color: #89CFF0;
+    color: #1a1a7f; 
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+.locationButton:hover {
+    background-color: #77b7d8;
+}
 
 
 @media (min-width: 768px) {

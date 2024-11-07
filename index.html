@@ -14,7 +14,6 @@
             <span class="title">MIYARU PROGRAMME</span>
         </div>
 
-       
         <div class="section">
             <div class="section-header">Geographical/Time</div>
             <div class="input-group">
@@ -27,20 +26,20 @@
             </div>
             <div class="input-group location-group">
                 <label for="location">Location (Latitude and Longitude)</label>
-                <input type="text" placeholder="Latitude" id="latitude">
-                <br>
-                <br>
-                <input type="text" placeholder="North/South" id="verticalLat">
-                <br>
-                <br>
-                <input type="text" placeholder="Longitude" id="longitude">
-                <br>
-                <br>
-                <input type="text" placeholder="East/West" id="horizontalLong">
+                <input type="text" placeholder="Latitude" id="latitude" readonly>
+                <br><br>
+                <input type="text" placeholder="North/South" id="verticalLat" readonly>
+                <br><br>
+                <input type="text" placeholder="Longitude" id="longitude" readonly>
+                <br><br>
+                <input type="text" placeholder="East/West" id="horizontalLong" readonly>
+                <br><br>
+               
+                <button class='locationButton' type="button" onclick="getLocation()">Use My Location 📍</button>
             </div>
         </div>
+        
 
-       
         <div class="section">
             <div class="section-header">Shark Information</div>
             <div class="input-group">
@@ -70,7 +69,6 @@
             </div>
         </div>
 
-    
         <div class="section">
             <div class="section-header">Extras</div>
             <div class="input-group">
@@ -80,11 +78,10 @@ e.g. scars, surrounding flora/fauna"></textarea>
             </div>
         </div>
 
-   
         <a class="submit-btn" href="submitscreen.html">Submit Sighting</a>
-
 
     </div>
 
+    <script src="script.js"></script>
 </body>
 </html>
