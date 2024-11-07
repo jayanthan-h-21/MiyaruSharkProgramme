@@ -1,0 +1,148 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #008cba; /* Ocean blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 400px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow around main box */
+    overflow: hidden;
+    margin-bottom: 40px; /* Space above footer */
+}
+
+/* Header */
+.header {
+    background-color: #89CFF0;
+    color: #1a1a7f; /* Dark blue text */
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+    position: relative;
+}
+
+.header img {
+    width: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.title {
+    color: #1a1a7f; /* Dark blue */
+}
+
+/* Section Headers */
+.section-header {
+    background-color: #1a1a7f;
+    color: white;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px; /* Rounded corners */
+    margin: 10px 15px 20px 15px; /* Added extra bottom margin for spacing */
+}
+
+/* Input fields and sections */
+.section {
+    padding: 0 15px 15px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.input-group input, .input-group textarea, .input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    color: #333;
+}
+
+.input-group textarea {
+    resize: none;
+}
+
+/* Latitude and Longitude - added spacing */
+.location-group input {
+    width: calc(50% - 5px); /* Adjusted width with space between */
+}
+
+#latitude {
+    margin-right: 10px; /* Added space between Latitude and Longitude inputs */
+}
+
+/* Submit button */
+.submit-btn {
+    display: block;
+    width: 90%;
+    margin: 20px auto;
+    padding: 12px;
+    background-color: #89CFF0;
+    color: #1a1a7f; /* Dark blue text */
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+.submit-btn:hover {
+    background-color: #77b7d8;
+}
+
+/* Footer icon */
+.footer-icon {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.footer-icon img {
+    width: 40px;
+}
+
+/* Footer */
+.footer {
+    background-color: #1a1a7f; /* Dark blue footer */
+    color: white;
+    text-align: center;
+    padding: 20px; /* Increased padding for larger size */
+    font-size: 1em;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+    .container {
+        max-width: 600px;
+    }
+}

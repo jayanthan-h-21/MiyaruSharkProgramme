@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miyaru Programme</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header with logo and title -->
+        <div class="header">
+            <img src="Miyaru shark icon.png" alt="Shark Logo"> 
+            <span class="title">MIYARU PROGRAMME</span>
+        </div>
+
+        <!-- Geographical and Time Section -->
+        <div class="section">
+            <div class="section-header">Geographical/Time</div>
+            <div class="input-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date">
+            </div>
+            <div class="input-group">
+                <label for="time">Time</label>
+                <input type="time" id="time" name="time">
+            </div>
+            <div class="input-group location-group">
+                <label for="location">Location (Latitude and Longitude)</label>
+                <input type="text" placeholder="Latitude" id="latitude">
+                <br>
+                <br>
+                <input type="text" placeholder="North/South" id="verticalLat">
+                <br>
+                <br>
+                <input type="text" placeholder="Longitude" id="longitude">
+                <br>
+                <br>
+                <input type="text" placeholder="East/West" id="horizontalLong">
+            </div>
+        </div>
+
+        <!-- Shark Information Section -->
+        <div class="section">
+            <div class="section-header">Shark Information</div>
+            <div class="input-group">
+                <label for="species">Species</label>
+                <select id="species">
+                    <option value="">Select Species</option>
+                    <option value="species1">Option 1</option>
+                    <option value="species2">Option 2</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="size">Size</label>
+                <select id="size">
+                    <option value="">Select Size</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="behaviour">Behaviour</label>
+                <select id="behaviour">
+                    <option value="">Select Behaviour</option>
+                    <option value="calm">Calm</option>
+                    <option value="aggressive">Aggressive</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Extras Section -->
+        <div class="section">
+            <div class="section-header">Extras</div>
+            <div class="input-group">
+                <label for="extras">Additional Information</label>
+                <textarea id="extras" rows="3" placeholder="Please write any additional information here: 
+e.g. scars, surrounding flora/fauna"></textarea>
+            </div>
+        </div>
+
+        <!-- Submit Button -->
+        <button class="submit-btn" href="submitscreen.html">Submit Sighting</button>
+
+        <!-- Footer Icon -->
+        <div class="footer-icon">
+            <img src="Miyaru shark icon.png" alt="Shark Icon">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        @ Miyaru Programme 2024
+    </footer>
+</body>
+</html>
