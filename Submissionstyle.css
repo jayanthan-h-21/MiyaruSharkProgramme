@@ -1,68 +1,77 @@
-/* Reset margin and padding */
-body, html {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: Arial, sans-serif;
+}
+
+body {
+    background: url('sea_background.jpg') no-repeat center center fixed;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url('background-image.jpg') center center / cover no-repeat;
-    color: white;
-  }
-  
-  /* Container styling */
-  .container {
+    color: #ffffff;
+}
+
+.container {
     text-align: center;
     width: 90%;
     max-width: 400px;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
-  }
-  
-  /* Logo styling */
-  .logo {
+}
+
+.header h1 {
     font-size: 24px;
     font-weight: bold;
+    color: #ffffff;
     margin-bottom: 20px;
-  }
-  
-  .logo img {
-    width: 24px;
-    vertical-align: middle;
-  }
-  
-  /* Message styling */
-  .message {
-    font-size: 20px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.content-box {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     margin-bottom: 20px;
-  }
-  
-  /* Button styling */
-  .button {
+}
+
+.content-box p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.button {
     display: block;
     width: 100%;
     padding: 12px;
-    font-size: 16px;
     margin: 10px 0;
     background-color: #4ea8e9;
-    color: #fff;
+    color: #ffffff;
     border: none;
     border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
     cursor: pointer;
-  }
-  
-  .button:hover {
+    transition: background-color 0.3s;
+}
+
+.button:hover {
     background-color: #3694d3;
-  }
-  
-  /* Footer icon styling */
-  .footer-icon {
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
     margin-top: 20px;
-  }
-  
-  .footer-icon img {
-    width: 40px;
-  }
-  
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.7));
+}
+

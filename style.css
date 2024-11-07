@@ -1,4 +1,4 @@
-/* General styles */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #008cba; /* Ocean blue background */
+    background-color: #008cba; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,15 +21,18 @@ body {
     width: 100%;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow around main box */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); 
     overflow: hidden;
-    margin-bottom: 40px; /* Space above footer */
+    margin-bottom: 40px; 
 }
 
-/* Header */
+.a {
+    text-decoration: none;
+}
+
 .header {
     background-color: #89CFF0;
-    color: #1a1a7f; /* Dark blue text */
+    color: #1a1a7f; 
     text-align: center;
     padding: 20px;
     font-size: 1.5em;
@@ -43,10 +46,10 @@ body {
 }
 
 .title {
-    color: #1a1a7f; /* Dark blue */
+    color: #1a1a7f;
 }
 
-/* Section Headers */
+
 .section-header {
     background-color: #1a1a7f;
     color: white;
@@ -54,11 +57,11 @@ body {
     font-size: 1em;
     font-weight: bold;
     text-align: center;
-    border-radius: 10px; /* Rounded corners */
-    margin: 10px 15px 20px 15px; /* Added extra bottom margin for spacing */
+    border-radius: 10px;
+    margin: 10px 15px 20px 15px;
 }
 
-/* Input fields and sections */
+
 .section {
     padding: 0 15px 15px;
 }
@@ -86,23 +89,22 @@ body {
     resize: none;
 }
 
-/* Latitude and Longitude - added spacing */
 .location-group input {
-    width: calc(50% - 5px); /* Adjusted width with space between */
+    width: calc(50% - 5px); 
 }
 
 #latitude {
-    margin-right: 10px; /* Added space between Latitude and Longitude inputs */
+    margin-right: 10px; 
 }
 
-/* Submit button */
+
 .submit-btn {
     display: block;
     width: 90%;
     margin: 20px auto;
     padding: 12px;
     background-color: #89CFF0;
-    color: #1a1a7f; /* Dark blue text */
+    color: #1a1a7f; 
     border: none;
     border-radius: 8px;
     font-size: 1.1em;
@@ -115,34 +117,12 @@ body {
     background-color: #77b7d8;
 }
 
-/* Footer icon */
-.footer-icon {
-    display: flex;
-    justify-content: center;
-    padding: 15px;
-}
 
-.footer-icon img {
-    width: 40px;
-}
 
-/* Footer */
-.footer {
-    background-color: #1a1a7f; /* Dark blue footer */
-    color: white;
-    text-align: center;
-    padding: 20px; /* Increased padding for larger size */
-    font-size: 1em;
-    width: 100%;
-    margin-top: 20px;
-    position: relative;
-    bottom: 0;
-    left: 0;
-}
-
-/* Responsive design */
 @media (min-width: 768px) {
     .container {
         max-width: 600px;
     }
 }
+
+
