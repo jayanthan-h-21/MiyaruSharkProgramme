@@ -49,6 +49,10 @@ body {
     color: #1a1a7f;
 }
 
+.headerSharkSize {
+    width: 40px;
+    height: 40px;
+}
 
 .section-header {
     background-color: #1a1a7f;
