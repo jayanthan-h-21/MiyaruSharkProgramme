@@ -1,3 +1,50 @@
+document.getElementById("sightingForm").addEventListener("submit", async function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Collect form data
+    const formData = {
+        date: document.getElementById("date").value,
+        time: document.getElementById("time").value,
+        latitude: document.getElementById("latitude").value,
+        verticalLat: document.getElementById("verticalLat").value,
+        longitude: document.getElementById("longitude").value,
+        horizontalLong: document.getElementById("horizontalLong").value,
+        species: document.getElementById("species").value,
+        size: document.getElementById("size").value,
+        behaviour: document.getElementById("behaviour").value,
+        extras: document.getElementById("extras").value
+    };
+
+    // Check if all required fields are filled
+    if (!formData.date || !formData.time || !formData.latitude || !formData.longitude || !formData.species || !formData.size || !formData.behaviour) {
+        alert("Please fill in all required fields.");
+        return;
+    }
+
+    // Send data to the backend API
+    try {
+        const response = await fetch('https://sharkproject.tactor.dev/api/addShark', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData)
+        });
+
+        const result = await response.json();
+
+        if (response.ok) {
+            alert("Sighting submitted successfully!");
+            window.location.href = "submitscreen.html"; // Redirect to the submission screen
+        } else {
+            throw new Error(result.message || 'Failed to submit sighting');
+        }
+    } catch (error) {
+        alert("Error: " + error.message);
+    }
+});
+
+// Function for geolocation
 function getLocation() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition, showError);
