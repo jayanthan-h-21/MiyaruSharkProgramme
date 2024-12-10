@@ -6,82 +6,79 @@
     <title>Miyaru Shark Programme</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="Miyaru_shark_icon-removebg-preview.png" class="favicon" type="image/png">
-
 </head>
 <body>
     <div class="container">
-      
         <div class="header">
             <img src="Miyaru_shark_icon-removebg-preview.png" class="headerSharkSize" alt="Shark Logo"> 
             <span class="title">MIYARU SHARK PROGRAMME</span>
         </div>
 
-        <div class="section">
-            <div class="section-header">Geographical/Time</div>
-            <div class="input-group">
-                <label for="date">Date</label>
-                <input type="date" id="date" name="date">
+        <form id="sightingForm">
+            <div class="section">
+                <div class="section-header">Geographical/Time</div>
+                <div class="input-group">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                <div class="input-group">
+                    <label for="time">Time</label>
+                    <input type="time" id="time" name="time">
+                </div>
+                <div class="input-group location-group">
+                    <label for="location">Location (Latitude and Longitude)</label>
+                    <input type="text" placeholder="Latitude" id="latitude" readonly>
+                    <br><br>
+                    <input type="text" placeholder="North/South" id="verticalLat" readonly>
+                    <br><br>
+                    <input type="text" placeholder="Longitude" id="longitude" readonly>
+                    <br><br>
+                    <input type="text" placeholder="East/West" id="horizontalLong" readonly>
+                    <br><br>
+                    <button class='locationButton' type="button" onclick="getLocation()">Use My Location 📍</button>
+                </div>
             </div>
-            <div class="input-group">
-                <label for="time">Time</label>
-                <input type="time" id="time" name="time">
-            </div>
-            <div class="input-group location-group">
-                <label for="location">Location (Latitude and Longitude)</label>
-                <input type="text" placeholder="Latitude" id="latitude" readonly>
-                <br><br>
-                <input type="text" placeholder="North/South" id="verticalLat" readonly>
-                <br><br>
-                <input type="text" placeholder="Longitude" id="longitude" readonly>
-                <br><br>
-                <input type="text" placeholder="East/West" id="horizontalLong" readonly>
-                <br><br>
-               
-                <button class='locationButton' type="button" onclick="getLocation()">Use My Location 📍</button>
-            </div>
-        </div>
-        
 
-        <div class="section">
-            <div class="section-header">Shark Information</div>
-            <div class="input-group">
-                <label for="species">Species</label>
-                <select id="species">
-                    <option value="">Select Species</option>
-                    <option value="species1">Option 1</option>
-                    <option value="species2">Option 2</option>
-                </select>
+            <div class="section">
+                <div class="section-header">Shark Information</div>
+                <div class="input-group">
+                    <label for="species">Species</label>
+                    <select id="species">
+                        <option value="">Select Species</option>
+                        <option value="species1">Option 1</option>
+                        <option value="species2">Option 2</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="size">Size</label>
+                    <select id="size">
+                        <option value="">Select Size</option>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="behaviour">Behaviour</label>
+                    <select id="behaviour">
+                        <option value="">Select Behaviour</option>
+                        <option value="calm">Calm</option>
+                        <option value="aggressive">Aggressive</option>
+                    </select>
+                </div>
             </div>
-            <div class="input-group">
-                <label for="size">Size</label>
-                <select id="size">
-                    <option value="">Select Size</option>
-                    <option value="small">Small</option>
-                    <option value="medium">Medium</option>
-                    <option value="large">Large</option>
-                </select>
-            </div>
-            <div class="input-group">
-                <label for="behaviour">Behaviour</label>
-                <select id="behaviour">
-                    <option value="">Select Behaviour</option>
-                    <option value="calm">Calm</option>
-                    <option value="aggressive">Aggressive</option>
-                </select>
-            </div>
-        </div>
 
-        <div class="section">
-            <div class="section-header">Extras</div>
-            <div class="input-group">
-                <label for="extras">Additional Information</label>
-                <textarea id="extras" rows="3" placeholder="Please write any additional information here: 
+            <div class="section">
+                <div class="section-header">Extras</div>
+                <div class="input-group">
+                    <label for="extras">Additional Information</label>
+                    <textarea id="extras" rows="3" placeholder="Please write any additional information here: 
 e.g. scars, surrounding flora/fauna"></textarea>
+                </div>
             </div>
-        </div>
 
-        <a class="submit-btn" href="submitscreen.html">Submit Sighting</a>
-
+            <button type="submit" class="submit-btn">Submit Sighting</button>
+        </form>
     </div>
 
     <script src="script.js"></script>
